@@ -1,0 +1,138 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #85C1E9;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #85abe9;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #85b6f7;
+}
+
+body {
+    background-color: rgb(179, 239, 239);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#survey-form {
+    width: 400px;
+    background: #85C1E9;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+#titulo {
+    width: 400px; 
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 34px;
+}
+
+#descripcion {
+    width: 400px; 
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#comments {
+    width: 100%
+
+}
+
+#nombre {
+    width: 100%
+}
+
+#email {
+    width: 100%
+}
+
+#numero {
+    width: 100%
+}
+
+#edad {
+    width: 100%
+}
+
+#provincia {
+    width: 100% 
+}
+
+#direccion {
+    width: 100% 
+}
+
+#codigo_postal {
+    width: 100% 
+}
+
+#submit {
+    text-align: center;
+    width: 100%
+}
+
+#titulo2 {
+    width: 400px; 
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 34px;
+}
+
+table {
+    margin-top: 5px;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    width: 400px;
+    background:  #85C1E9;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+footer {
+    background-color: #85b6f7;
+    color: #fff;
+    text-align: center;
+    padding:1px;
+    width: 100%;
+    bottom: 0;
+}
+
