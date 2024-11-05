@@ -1,46 +1,63 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
     <link rel="stylesheet" href="estilo3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Formulario Responsivo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<header>
-    <h1>$juanSebastianMartinez // ¡contactame!</h1>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="https://github.com/juansebasmartinez">UserGit</a></li>
-        <li><a href="acercade.html">Acerca de</a></li>
-        <li><a href="formulario.html">¡Contactame!</a></li>
-    </ul>
-</nav>
 <body>
+    <header>
+        <h1>
+            <span id="texto">Portafolio personal</span>
+            <img src="logo_curza.jpg" alt="Logo CURZA" id="logo-curza">
+        </h1>
+    <nav>
+        <ul>
+            <li><a href="https://github.com/juansebasmartinez">UserGit</a></li>
+            <li><a href="acercade.html">Acerca de</a></li>
+            <li><a href="formulario.html">¡Contactame!</a></li>
+        </ul>
+    </nav>
+    </header> 
+
     <h1 id="titulo">Bienvenido a mi formulario</h1>
     <p id="descripcion">Gracias por pasar por mi web! Ingresa tus datos para contactarme</p>
     
     <form id="survey-form">
-        <label id="nombre-label">Nombre y apellido</label>
-        <input type="text" id="nombre" placeholder="Ingresa tu nombre seguido de tu apellido" required><br>
+        <label id="nombre-label">Nombre</label>
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre"><br>
+
+        <label id="apellido-label">Apellido</label>
+        <input type="text" id="apellido" placeholder="Ingresa tu apellido"><br>
 
         <label id="email-label">Email</label>
-        <input type="email" id="email" placeholder="Igresa tu email" required><br>
+        <input type="email" id="email" placeholder="Igresa tu email"><br>
     
         <label id="numero-label">Numero</label>
-        <input type="number" id="numero" min="4" max="40" placeholder="Ingrese su numero de telefono" required><br>
+        <input type="number" id="numero" min="4" max="40" placeholder="Ingrese su numero de telefono"><br>
 
         <label id="edad-label">Edad</label>
-        <input type="number" id="edad" min="16" max="120" placeholder="Ingrese su edad" required><br>
+        <input type="number" id="edad" min="16" max="120" placeholder="Ingrese su edad"><br>
 
         <label id="provincia-label">Provincia</label>
-        <input type="text" id="provincia" placeholder="Provincia que reside actualmente" required><br>
+        <input list="Provincias" type="text" id="provincia" placeholder="Provincia que reside actualmente"><br>
+        <datalist id="Provincias">
+            <option value="Misiones"></option>
+            <option value="Santa Cruz"></option>
+            <option value="Tucuman"></option>
+            <option value="Cordoba"></option>
+            <option value="Rio Negro"></option>
+        </datalist>
 
         <label id="direccion-label">Direccion</label>
-        <input type="text" id="direccion" placeholder="Ingresa tu direccion actual" required><br>
+        <input type="text" id="direccion" placeholder="Ingresa tu direccion actual"><br>
 
         <label id="codigo_postal-label">Codigo postal</label>
-        <input type="number" id="codigo_postal" min="3" max="8" placeholder="Ingrese su codigo postal" required><br>
+        <input type="number" id="codigo_postal" min="3" max="8" placeholder="Ingrese su codigo postal"><br>
     
     <p>Indique su ocupación</p>
     <select id="dropdown">
@@ -50,14 +67,14 @@
     </select>
     
     <p>Coloque su metodo preferido de contacto</p>
-    <input type="radio" name="hm" value="h"> Email <br>
-    <input type="radio" name="hm" value="m"> Correo postal<br>
-    <input type="radio" name="hm" value="m"> telefono<br>
+    <input type="radio" name="contacto" value="email"> Email <br>
+    <input type="radio" name="contacto" value="correo"> Correo postal<br>
+    <input type="radio" name="contacto" value="telefono"> telefono<br>
     
     <p> ¿Cual es el tipo de suscripción que desea? (Puedes seleccionar mas de una opción) </p>
-    <input type="checkbox" name="casilla" value="Front-end Projects">Noticias<br>
-    <input type="checkbox" name="casilla" value="Back-end Projects1">Promociones<br>
-    <input type="checkbox" name="casilla" value="Data Visualization">Eventos<br>
+    <input type="checkbox" name="suscripcion" value="noticias">Noticias<br>
+    <input type="checkbox" name="suscripcion" value="promociones">Promociones<br>
+    <input type="checkbox" name="suscripcion" value="eventos">Eventos<br>
     
     <p>Aqui puedes dejar un mensaje, hacer un comentario o una sugerencia:</p>
     
@@ -87,10 +104,12 @@
             <tr><td>Método de Contacto</td><td></td></tr>
             <tr><td>Suscripciones</td><td></td></tr>
         </table>
-    </div>
 
     <footer>
         <p>&copy; 2024 Juan Sebastian Martinez - Universidad Nacional del Comahue.</p>
     </footer>
+    <a href="#top" class="scroll-to-top">
+        <span>&#8593;</span>
+    </a>
 </body>
 </html>
